@@ -2,5 +2,4 @@
 - [第一章：快速入门](chapters/01-getting-started.md)
 - [第二章：安装配置](chapters/02-installation.md)
 - [第三章：Skill开发](chapters/03-skill-dev.md)
-- [第四章：Agent编排](chapters/04-agent-orchestration.md)
-- [第五章：实战案例](chapters/05-real-world.md)
+- [第四章：Skill开发进阶](chapters/04-skill-advanced.md)
