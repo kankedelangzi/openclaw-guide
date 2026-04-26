@@ -3,3 +3,4 @@
 - [第二章：安装配置](chapters/02-installation.md)
 - [第三章：Skill开发](chapters/03-skill-dev.md)
 - [第四章：Skill开发进阶](chapters/04-skill-advanced.md)
+- [第五章：Agent编排入门](chapters/05-agent-orchestration.md)
