@@ -64,7 +64,7 @@
 
 ---
 
-## 第7章：记忆系统（约4000字）
+## 第7章：记忆系统（约4000字）✅ 已完成
 - 7.1 OpenClaw记忆体系（全貌：workspace + vectorDB + episodic）
 - 7.2 Workspace文件体系（AGENTS.md、SOUL.md、TOOL.md）
 - 7.3 Episodic Memory（情景记忆、事件记录）
