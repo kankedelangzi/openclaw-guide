@@ -1,0 +1,79 @@
+{
+  "name": "xhs-ts",
+  "version": "0.0.8",
+  "description": "小红书（Xiaohongshu）自动化操作技能，支持搜索、发布、互动、数据抓取",
+  "type": "module",
+  "bin": {
+    "xhs": "./scripts/index.ts"
+  },
+  "scripts": {
+    "start": "tsx scripts/index.ts",
+    "help": "tsx scripts/index.ts --help",
+    "login": "tsx scripts/index.ts login",
+    "login:headless": "tsx scripts/index.ts login --headless",
+    "user": "tsx scripts/index.ts user",
+    "user:use": "tsx scripts/index.ts user --set-current",
+    "search": "tsx scripts/index.ts search",
+    "publish": "tsx scripts/index.ts publish",
+    "like": "tsx scripts/index.ts like",
+    "collect": "tsx scripts/index.ts collect",
+    "comment": "tsx scripts/index.ts comment",
+    "follow": "tsx scripts/index.ts follow",
+    "scrape": "tsx scripts/index.ts",
+    "install:browser": "npx playwright install chromium",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint scripts --ext .ts",
+    "lint:fix": "eslint scripts --ext .ts --fix",
+    "format": "prettier --write scripts/**/*.ts",
+    "format:check": "prettier --check scripts/**/*.ts"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "dotenv": "^16.6.1",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.1",
+    "@typescript-eslint/parser": "^8.57.1",
+    "eslint": "^10.0.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "eslint-plugin-prettier": "^5.5.5",
+    "prettier": "^3.8.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "typescript-eslint": "^8.57.1"
+  },
+  "keywords": [
+    "xiaohongshu",
+    "xhs",
+    "小红书",
+    "playwright",
+    "automation",
+    "openclaw",
+    "skill",
+    "scraper"
+  ],
+  "author": "lv-saharan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lv-saharan/skills.git",
+    "directory": "xhs-ts"
+  },
+  "homepage": "https://github.com/lv-saharan/skills/tree/main/xhs-ts#readme",
+  "bugs": {
+    "url": "https://github.com/lv-saharan/skills/issues"
+  },
+  "files": [
+    "scripts/**/*",
+    "README.md",
+    "LICENSE",
+    "SKILL.md"
+  ],
+  "engines": {
+    "node": ">=22.16.0"
+  }
+}

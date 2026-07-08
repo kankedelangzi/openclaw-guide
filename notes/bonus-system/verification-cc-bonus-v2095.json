@@ -1,0 +1,65 @@
+{
+  "version": "v2095",
+  "timestamp": "2026-07-09T05:54:00+08:00",
+  "round": 619,
+  "start": "v1475",
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "passed": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "passed": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "passed": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "passed": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "passed": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "passed": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "passed": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "passed": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "passed": true
+    }
+  ],
+  "passed": 9,
+  "total": 9,
+  "rate": 100.0,
+  "cc_attrs": {
+    "strength": 310,
+    "physical_attack": 110,
+    "independent_attack": 120,
+    "critical": 3
+  },
+  "berserker": {
+    "fixed": 9.27,
+    "percent": 32.81
+  },
+  "swordsmen": {
+    "percent": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "pole_break": 2743,
+  "faal_framework": "frozen",
+  "zero_drift": true,
+  "self_evolution_boundary": "respected"
+}

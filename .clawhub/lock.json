@@ -1,0 +1,277 @@
+{
+  "version": 1,
+  "skills": {
+    "openclaw-tavily-search": {
+      "version": "0.1.0",
+      "installedAt": 1774597303048
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1780025911888
+    },
+    "memory-hygiene": {
+      "version": "1.0.0",
+      "installedAt": 1774597306962
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1774597308504
+    },
+    "agent-browser-clawdbot": {
+      "version": "0.1.0",
+      "installedAt": 1774597310193
+    },
+    "tencentcloud-lighthouse-skill": {
+      "version": "1.0.0",
+      "installedAt": 1774597312595
+    },
+    "tencent-docs": {
+      "version": "1.0.21",
+      "installedAt": 1774597318858
+    },
+    "tencent-cos-skill": {
+      "version": "1.0.6",
+      "installedAt": 1774597322211
+    },
+    "tencent-meeting-skill": {
+      "version": "1.0.0",
+      "installedAt": 1774597324890
+    },
+    "ima-skills": {
+      "version": "1.1.2",
+      "installedAt": 1774597327547
+    },
+    "self-improving-agent": {
+      "version": "1.0.11",
+      "installedAt": 1780025782391
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1774930243451
+    },
+    "ontology": {
+      "version": "0.1.2",
+      "installedAt": 1774930244295
+    },
+    "self-improving-proactive-agent": {
+      "version": "1.0.0",
+      "installedAt": 1774930245409
+    },
+    "gog": {
+      "version": "1.0.0",
+      "installedAt": 1774930246324
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1774930248077
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1774930249074
+    },
+    "weather": {
+      "version": "1.0.0",
+      "installedAt": 1774930249889
+    },
+    "admapix": {
+      "version": "1.0.28",
+      "installedAt": 1774930251585
+    },
+    "nano-banana-pro": {
+      "version": "1.0.1",
+      "installedAt": 1774930252437
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1774930253292
+    },
+    "baidu-search": {
+      "version": "1.1.0",
+      "installedAt": 1774930254067
+    },
+    "nano-pdf": {
+      "version": "1.0.0",
+      "installedAt": 1774930254904
+    },
+    "multi-search-engine": {
+      "version": "2.0.1",
+      "installedAt": 1774930256109
+    },
+    "humanizer": {
+      "version": "1.0.0",
+      "installedAt": 1774930257018
+    },
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1774930257884
+    },
+    "notion": {
+      "version": "1.0.0",
+      "installedAt": 1774930258682
+    },
+    "api-gateway": {
+      "version": "1.0.54",
+      "installedAt": 1774930259671
+    },
+    "openai-whisper": {
+      "version": "1.0.0",
+      "installedAt": 1774930261608
+    },
+    "mcporter": {
+      "version": "1.0.0",
+      "installedAt": 1774930265626
+    },
+    "skill-creator": {
+      "version": "0.1.0",
+      "installedAt": 1774944005755
+    },
+    "automation-workflows": {
+      "version": "0.1.0",
+      "installedAt": 1774930267307
+    },
+    "video-generator-seedance": {
+      "version": "1.0.1",
+      "installedAt": 1774930268972
+    },
+    "brave-search": {
+      "version": "1.0.1",
+      "installedAt": 1774930270108
+    },
+    "word-docx": {
+      "version": "1.0.2",
+      "installedAt": 1774930271331
+    },
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1774943868655
+    },
+    "excel-xlsx": {
+      "version": "1.0.2",
+      "installedAt": 1774930273339
+    },
+    "stock-analysis": {
+      "version": "6.2.0",
+      "installedAt": 1774930274172
+    },
+    "elite-longterm-memory": {
+      "version": "1.2.3",
+      "installedAt": 1774930275017
+    },
+    "football-automated-value-betting": {
+      "version": "1.0.0",
+      "installedAt": 1774930276203
+    },
+    "humanize-ai-text": {
+      "version": "1.0.1",
+      "installedAt": 1774930277388
+    },
+    "youtube-watcher": {
+      "version": "1.0.0",
+      "installedAt": 1774930278257
+    },
+    "desktop-control": {
+      "version": "1.0.0",
+      "installedAt": 1774930279459
+    },
+    "imap-smtp-email": {
+      "version": "0.0.10",
+      "installedAt": 1774930280616
+    },
+    "byterover": {
+      "version": "1.2.2",
+      "installedAt": 1774930281561
+    },
+    "clawdbot-documentation-expert": {
+      "version": "1.0.0",
+      "installedAt": 1774930282786
+    },
+    "himalaya": {
+      "version": "1.0.0",
+      "installedAt": 1774930283713
+    },
+    "video-frames": {
+      "version": "1.0.0",
+      "installedAt": 1774930284552
+    },
+    "slack": {
+      "version": "1.0.0",
+      "installedAt": 1774930285434
+    },
+    "browser-use": {
+      "version": "1.0.2",
+      "installedAt": 1774930287642
+    },
+    "trello": {
+      "version": "1.0.0",
+      "installedAt": 1774930288532
+    },
+    "news-summary": {
+      "version": "1.0.1",
+      "installedAt": 1774930289755
+    },
+    "cloudbase": {
+      "version": "1.83.0",
+      "installedAt": 1779703069231
+    },
+    "playwright-cli-openclaw": {
+      "version": "1.0.0",
+      "installedAt": 1779703070766
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1774943897420
+    },
+    "memory-manager": {
+      "version": "1.0.0",
+      "installedAt": 1774943935052
+    },
+    "things-mac": {
+      "version": "1.0.0",
+      "installedAt": 1774944038483
+    },
+    "openclaw-xhs": {
+      "version": "1.0.1",
+      "installedAt": 1774944307160
+    },
+    "xhs-ts": {
+      "version": "0.0.5",
+      "installedAt": 1774944312471
+    },
+    "xiaohongshu-mcp-1-0-0": {
+      "version": "1.0.0",
+      "installedAt": 1774944358326
+    },
+    "openclaw-master-skills": {
+      "version": "0.7.0",
+      "installedAt": 1776178142605
+    },
+    "agent-council": {
+      "version": "1.0.0",
+      "installedAt": 1776178202653
+    },
+    "multi-agent-chat": {
+      "version": "1.0.0",
+      "installedAt": 1777333203728
+    },
+    "multi-agent": {
+      "version": "0.1.0",
+      "installedAt": 1777333204281
+    },
+    "pilot-event-bus": {
+      "version": "1.0.0",
+      "installedAt": 1777333261782
+    },
+    "multi-agent-coordinator": {
+      "version": "1.0.0",
+      "installedAt": 1777333262134
+    },
+    "claw-events": {
+      "version": "1.0.0",
+      "installedAt": 1777333262517
+    },
+    "multi-agent-orchestrator": {
+      "version": "1.0.0",
+      "installedAt": 1777333262604
+    }
+  }
+}

@@ -1,0 +1,165 @@
+/**
+ * CLI Command Options Type Definitions
+ *
+ * @module cli/types
+ * @description Type definitions for CLI command options (raw CLI inputs)
+ */
+
+/**
+ * Login command options (CLI-specific, raw string inputs)
+ */
+export interface CliLoginOptions {
+  /** Use QR code login */
+  qr?: boolean;
+  /** Use SMS login */
+  sms?: boolean;
+  /** Login to creator center */
+  creator?: boolean;
+  /** Run in headless mode */
+  headless?: boolean;
+  /** Login timeout in milliseconds (string from CLI) */
+  timeout?: string;
+  /** User name for multi-user support */
+  user?: string;
+}
+
+/**
+ * Search command options (CLI-specific, raw string inputs)
+ */
+export interface CliSearchOptions {
+  /** Number of results to return (string from CLI, default: 10, max: 100) */
+  limit: string;
+  /** Number of results to skip (string from CLI, default: 0) */
+  skip?: string;
+  /** Sort by: general, time_descending, or hot */
+  sort: 'general' | 'time_descending' | 'hot';
+  /** Note type filter: all, image, or video */
+  noteType?: 'all' | 'image' | 'video';
+  /** Time range filter: all, day, week, or month */
+  timeRange?: 'all' | 'day' | 'week' | 'month';
+  /** Search scope filter: all or following */
+  scope?: 'all' | 'following';
+  /** Location filter: all, nearby, or city */
+  location?: 'all' | 'nearby' | 'city';
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+}
+
+/**
+ * Publish command options (CLI-specific, raw string inputs)
+ */
+export interface CliPublishOptions {
+  /** Note title (max 20 chars) */
+  title: string;
+  /** Note content (max 1000 chars) */
+  content: string;
+  /** Image paths, comma separated */
+  images?: string;
+  /** Video path (alternative to images) */
+  video?: string;
+  /** Tags, comma separated */
+  tags?: string;
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+}
+
+/**
+ * Interaction command options (like, collect, comment, follow)
+ */
+export interface InteractOptions {
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+}
+
+/**
+ * Like command options (CLI-specific)
+ * Supports single or multiple URLs (space-separated)
+ */
+export interface CliLikeOptions {
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+  /** Delay between likes in ms (for multiple URLs) */
+  delay?: string;
+}
+
+/**
+ * Collect command options (CLI-specific)
+ * Supports single or multiple URLs (space-separated)
+ */
+export interface CliCollectOptions {
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+  /** Delay between collects in ms (for multiple URLs) */
+  delay?: string;
+}
+
+/**
+ * Comment command options (CLI-specific)
+ */
+export interface CliCommentOptions {
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+}
+
+/**
+ * Follow command options (CLI-specific)
+ * Supports single or multiple URLs (space-separated)
+ */
+export interface CliFollowOptions {
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+  /** Delay between follows in ms (for multiple URLs) */
+  delay?: string;
+}
+
+/**
+ * User command options
+ */
+export interface CliUserOptions {
+  /** Set current user */
+  setCurrent?: string;
+  /** Set to default user */
+  setDefault?: boolean;
+}
+
+/**
+ * Scrape note command options (CLI-specific)
+ */
+export interface CliScrapeNoteOptions {
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+  /** Include comments in result */
+  comments?: boolean;
+  /** Max comments to include */
+  maxComments?: string;
+}
+
+/**
+ * Scrape user command options (CLI-specific)
+ */
+export interface CliScrapeUserOptions {
+  /** Run in headless mode */
+  headless?: boolean;
+  /** User name for multi-user support */
+  user?: string;
+  /** Include recent notes in result */
+  notes?: boolean;
+  /** Max notes to include */
+  maxNotes?: string;
+}

@@ -1,0 +1,12 @@
+{
+  "name": "mongodb-advanced",
+  "version": "1.0.0",
+  "description": "MongoDB 进阶示例 - 索引、聚合、事务",
+  "main": "advanced-examples.js",
+  "scripts": {
+    "start": "node advanced-examples.js"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.0"
+  }
+}

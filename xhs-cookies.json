@@ -1,0 +1,21 @@
+[
+  {"name":"abRequestId","value":"a0088200-0ee2-5317-a6df-a306a522a5d5","domain":".xiaohongshu.com","path":"/"},
+  {"name":"ets","value":"1774944191469","domain":".xiaohongshu.com","path":"/"},
+  {"name":"a1","value":"19d42eb042be5rnei76qlpc6iz5x046no0nzotia130000360777","domain":".xiaohongshu.com","path":"/"},
+  {"name":"webId","value":"0bc46d062f02ec0fe365799c5d81d46f","domain":".xiaohongshu.com","path":"/"},
+  {"name":"acw_tc","value":"0a0bb3c317749441920292755e423e5b64bd0818168185c9f0d7c5c76a82ec","domain":".xiaohongshu.com","path":"/"},
+  {"name":"gid","value":"yjf4JdDyyWl0yjf4JdD84893JDd2FId3WKA1I0yUSK3u2uq8C84KIl888qK8WWW8Ji20fd4Y","domain":".xiaohongshu.com","path":"/"},
+  {"name":"customer-sso-sid","value":"68c517623327626397417478wz2r8ro5vrvilcyb","domain":".xiaohongshu.com","path":"/"},
+  {"name":"x-user-id-creator.xiaohongshu.com","value":"69cb7fc00000000033035f0b","domain":".xiaohongshu.com","path":"/"},
+  {"name":"customerClientId","value":"791368433641478","domain":".xiaohongshu.com","path":"/"},
+  {"name":"access-token-creator.xiaohongshu.com","value":"customer.creator.AT-68c517623327626397417479arpbizmhuh06hsq3","domain":".xiaohongshu.com","path":"/"},
+  {"name":"galaxy_creator_session_id","value":"zQqao2BG4i4zHFnUZPPrQgWVlOGMBNFbE9oW","domain":".xiaohongshu.com","path":"/"},
+  {"name":"galaxy.creator.beaker.session.id","value":"1774944278775012889684","domain":".xiaohongshu.com","path":"/"},
+  {"name":"web_session","value":"040069b8bf3c889d0f5dfec9fe3b4b7502481e","domain":".xiaohongshu.com","path":"/"},
+  {"name":"id_token","value":"VjEAAMuHm12mQv57Mrt1CJ+LBv+84Blt9TjB6I4C9MyH5JAQruC1GP9gVcxFP/LSlT4ZTUtif4XXEFCDnQP4CUYE/3Q9qrsKTQLnxSHBkufZKRMXnPg9eskwHBTT1uB9CrP8Z6+2","domain":".xiaohongshu.com","path":"/"},
+  {"name":"unread","value":"%7B%22ub%22%3A%2269be47ab000000001f00029b%22%2C%22ue%22%3A%2269ad6e6700000000150227a6%22%2C%22uc%22%3A48%7D","domain":".xiaohongshu.com","path":"/"},
+  {"name":"websectiga","value":"984412fef754c018e472127b8effd174be8a5d51061c991aadd200c69a2801d6","domain":".xiaohongshu.com","path":"/"},
+  {"name":"sec_poison_id","value":"dce3248b-8e42-4140-8ac7-6ef36d86ebbc","domain":".xiaohongshu.com","path":"/"},
+  {"name":"xsecappid","value":"xhs-pc-web","domain":".xiaohongshu.com","path":"/"},
+  {"name":"loadts","value":"1774944678249","domain":".xiaohongshu.com","path":"/"}
+]

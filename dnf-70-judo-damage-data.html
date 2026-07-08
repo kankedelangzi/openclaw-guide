@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNF 70版本柔道（暴风眼）伤害数据</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); min-height: 100vh; color: #e8e8e8; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        h1 { text-align: center; color: #ff6b6b; font-size: 2.5em; margin: 30px 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        h2 { color: #4ecdc4; margin: 25px 0 15px; padding-bottom: 8px; border-bottom: 2px solid #4ecdc4; }
+        h3 { color: #ffd93d; margin: 15px 0 10px; }
+        .card { background: rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; margin: 15px 0; box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+        .skill-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        .skill-table th, .skill-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .skill-table th { background: rgba(78, 205, 196, 0.2); color: #4ecdc4; }
+        .skill-table tr:hover { background: rgba(255,255,255,0.05); }
+        .highlight { color: #ff6b6b; font-weight: bold; }
+        .grab-skill { border-left: 4px solid #ff6b6b; padding-left: 15px; }
+        .percentage-skill { border-left: 4px solid #4ecdc4; padding-left: 15px; }
+        .fixed-dmg-skill { border-left: 4px solid #ffd93d; padding-left: 15px; }
+        .mechanics-box { background: rgba(255,107,107,0.1); border-radius: 8px; padding: 15px; margin: 10px 0; }
+        .gear-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin: 15px 0; }
+        .gear-item { background: rgba(255,255,255,0.06); border-radius: 8px; padding: 15px; }
+        .gear-item h4 { color: #ffd93d; margin-bottom: 8px; }
+        .stat-bar { display: flex; align-items: center; margin: 8px 0; }
+        .stat-label { width: 100px; color: #aaa; }
+        .stat-value { font-weight: bold; color: #4ecdc4; }
+        .combo-section { background: rgba(78, 205, 196, 0.1); border-radius: 12px; padding: 20px; margin: 15px 0; }
+        .combo-arrow { color: #ffd93d; margin: 0 8px; }
+        .note { font-size: 0.9em; color: #888; margin-top: 5px; }
+        .version-tag { display: inline-block; background: #ff6b6b; color: white; padding: 3px 10px; border-radius: 4px; font-size: 0.8em; margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦞 DNF 70版本柔道（暴风眼）伤害数据 <span class="version-tag">70级 红月/十七天夜区</span></h1>
+
+        <!-- ==================== 核心技能数据 ==================== -->
+        <div class="card">
+            <h2>📊 核心技能数据（70版本满级）</h2>
+
+            <!-- 螺旋彗星落 -->
+            <div class="percentage-skill grab-skill">
+                <h3>⚡ 螺旋彗星落 (Comet Strike) - Lv20+</h3>
+                <table class="skill-table">
+                    <tr><th>属性</th><th>数值</th><th>说明</th></tr>
+                    <tr><td>技能等级</td><td class="highlight">Lv20</td><td>满级（70版本上限）</td></tr>
+                    <tr><td>伤害类型</td><td class="highlight">百分比 + 抓取</td><td>抓取技能，无视物理防御</td></tr>
+                    <tr><td>攻击段数</td><td class="highlight">1段（多段判定）</td><td>螺旋下砸，持续判定</td></tr>
+                    <tr><td>百分比倍率</td><td class="highlight">约 1850% ~ 2100%</td><td>含EX加成约2500%+</td></tr>
+                    <tr><td>抓取特性</td><td class="highlight">强制抓取</td><td>抓取状态下可取消</td></tr>
+                    <tr><td>冷却时间</td><td>约 15-18秒</td><td>技能等级影响</td></tr>
+                    <tr><td>MP消耗</td><td>约 120-150</td><td>随等级增加</td></tr>
+                    <tr><td>EX技能加成</td><td>+30%伤害</td><td>EX螺旋彗星落</td></tr>
+                </table>
+                <p class="note">💡 柔道核心输出技能，抓取状态下伤害最高，可衔接其他抓取技</p>
+            </div>
+
+            <!-- 抛投 -->
+            <div class="fixed-dmg-skill grab-skill">
+                <h3>🎯 抛投 (Throw) - Lv18+</h3>
+                <table class="skill-table">
+                    <tr><th>属性</th><th>数值</th><th>说明</th></tr>
+                    <tr><td>技能等级</td><td class="highlight">Lv18</td><td>满级（70版本上限）</td></tr>
+                    <tr><td>伤害类型</td><td class="highlight">固定伤害 (固伤)</td><td>无视防御，受力量影响</td></tr>
+                    <tr><td>固伤基数</td><td class="highlight">约 8,500 ~ 12,000</td><td>含EX加成可达15,000+</td></tr>
+                    <tr><td>抓取机制</td><td class="highlight">抓取+投掷</td><td>抓取敌人后抛向空中</td></tr>
+                    <tr><td>伤害公式</td><td class="highlight">固伤 × (1 + 力量/250)</td><td>纯固伤，不受百分比影响</td></tr>
+                    <tr><td>EX技能加成</td><td>+50%伤害</td><td>EX抛投</td></tr>
+                    <tr><td>冷却时间</td><td>约 8-10秒</td><td>短CD，可频繁使用</td></tr>
+                </table>
+                <p class="note">💡 柔道标志性技能，固伤机制使其在低等级装备下仍有可观伤害</p>
+            </div>
+
+            <!-- 雷霆膝击 -->
+            <div class="percentage-skill">
+                <h3>⚡ 雷霆膝击 (Thunder Knee) - Lv18+</h3>
+                <table class="skill-table">
+                    <tr><th>属性</th><th>数值</th><th>说明</th></tr>
+                    <tr><td>技能等级</td><td class="highlight">Lv18</td><td>满级（70版本上限）</td></tr>
+                    <tr><td>伤害类型</td><td class="highlight">百分比</td><td>非抓取，受物理防御影响</td></tr>
+                    <tr><td>百分比倍率</td><td class="highlight">约 1200% ~ 1450%</td><td>含EX加成约1800%+</td></tr>
+                    <tr><td>攻击段数</td><td class="highlight">1段</td><td>单次膝击</td></tr>
+                    <tr><td>抓取特性</td><td>无</td><td>需手动抓取后使用</td></tr>
+                    <tr><td>EX技能加成</td><td>+40%伤害</td><td>EX雷霆膝击</td></tr>
+                    <tr><td>冷却时间</td><td>约 12-15秒</td><td>中等CD</td></tr>
+                </table>
+                <p class="note">💡 高百分比膝击，适合抓取状态下秒杀小怪</p>
+            </div>
+
+            <!-- 摔技/背摔/折颈术 -->
+            <div class="fixed-dmg-skill grab-skill">
+                <h3>🥊 摔技组合 (Throw Combo)</h3>
+                <table class="skill-table">
+                    <tr><th>技能</th><th>等级</th><th>伤害类型</th><th>伤害数值</th><th>说明</th></tr>
+                    <tr><td>背摔 (Back Throw)</td><td>Lv10+</td><td>固伤</td><td class="highlight">约 3,500 ~ 5,000</td><td>抓取后向后摔投</td></tr>
+                    <tr><td>折颈术 (Neck Break)</td><td>Lv12+</td><td>固伤</td><td class="highlight">约 4,500 ~ 6,500</td><td>抓取后折颈，带眩晕</td></tr>
+                    <tr><td>过肩摔 (Overhead Throw)</td><td>Lv15+</td><td>固伤</td><td class="highlight">约 5,500 ~ 8,000</td><td>抓取后过肩摔，高伤害</td></tr>
+                    <tr><td>死亡之握 (Death Grip)</td><td>Lv16+</td><td>百分比+抓取</td><td class="highlight">约 800% ~ 1100%</td><td>抓取+百分比混合</td></tr>
+                </table>
+                <p class="note">💡 摔技组合是柔道连招核心，固伤为主，抓取状态下可自由衔接</p>
+            </div>
+
+            <!-- 空斩打 -->
+            <div class="percentage-skill">
+                <h3>✊ 空斩打 (Air Strike) - 连击基础</h3>
+                <table class="skill-table">
+                    <tr><th>属性</th><th>数值</th><th>说明</th></tr>
+                    <tr><td>技能等级</td><td class="highlight">Lv10+</td><td>建议满级</td></tr>
+                    <tr><td>伤害类型</td><td class="highlight">百分比</td><td>非抓取</td></tr>
+                    <tr><td>百分比倍率</td><td class="highlight">约 400% ~ 550%</td><td>含EX加成</td></tr>
+                    <tr><td>攻击段数</td><td class="highlight">3段</td><td>连续拳击</td></tr>
+                    <tr><td>连击作用</td><td class="highlight">抓取前摇</td><td>用于衔接抓取技</td></tr>
+                    <tr><td>EX技能加成</td><td>+25%伤害</td><td>EX空斩打</td></tr>
+                </table>
+                <p class="note">💡 柔道连招起手技，用于快速抓取敌人</p>
+            </div>
+        </div>
+
+        <!-- ==================== 70版本柔道装备 ==================== -->
+        <div class="card">
+            <h2>🎒 70版本柔道装备推荐</h2>
+            
+            <div class="gear-grid">
+                <div class="gear-item">
+                    <h4>🗡️ 武器选择</h4>
+                    <table class="skill-table">
+                        <tr><th>武器类型</th><th>推荐</th><th>说明</th></tr>
+                        <tr><td>法杖</td><td class="highlight">★★★★☆</td><td>魔攻高，适合百分比技能</td></tr>
+                        <tr><td>棍棒</td><td class="highlight">★★★★★</td><td>物理攻击高，柔道首选</td></tr>
+                        <tr><td>拳套</td><td class="highlight">★★★☆☆</td><td>攻速快，但伤害较低</td></tr>
+                    </table>
+                    <p class="note">💡 推荐：70级粉棍棒（如"死亡之握"、"黑玫瑰"）或异界武器</p>
+                </div>
+
+                <div class="gear-item">
+                    <h4>🛡️ 异界套装 (E2/E3)</h4>
+                    <table class="skill-table">
+                        <tr><th>套装</th><th>部位</th><th>效果</th></tr>
+                        <tr><td rowspan="4">E2 (风暴眼)</td><td>2件</td><td>抛投+1</td></tr>
+                        <tr><td>3件</td><td>螺旋彗星落+1，伤害+10%</td></tr>
+                        <tr><td>5件</td><td>所有抓取技+2，伤害+15%</td></tr>
+                        <tr><td>6件</td><td>抓取技能伤害+25%</td></tr>
+                        <tr><td rowspan="3">E3 (死亡之握)</td><td>3件</td><td>死亡之握+2</td></tr>
+                        <tr><td>5件</td><td>抓取技伤害+20%</td></tr>
+                        <tr><td>9件</td><td>抓取技伤害+35%</td></tr>
+                    </table>
+                    <p class="note">💡 毕业推荐：E2 6件套 或 E3 9件套（抓取伤害最大化）</p>
+                </div>
+
+                <div class="gear-item">
+                    <h4>📊 毕业面板参考</h4>
+                    <div class="stat-bar"><span class="stat-label">力量</span><span class="stat-value">2800 ~ 3500</span></div>
+                    <div class="stat-bar"><span class="stat-label">独立攻击</span><span class="stat-value">1800 ~ 2200</span></div>
+                    <div class="stat-bar"><span class="stat-label">物理暴击</span><span class="stat-value">95% (满爆)</span></div>
+                    <div class="stat-bar"><span class="stat-label">属性强化</span><span class="stat-value">火强/冰强 200+</span></div>
+                    <div class="stat-bar"><span class="stat-label">攻击速度</span><span class="stat-value">+15% ~ +20%</span></div>
+                    <div class="stat-bar"><span class="stat-label">命中率</span><span class="stat-value">+15% (满命)</span></div>
+                    <p class="note">💡 柔道为固伤职业，力量和独立攻击收益最高</p>
+                </div>
+
+                <div class="gear-item">
+                    <h4>🎯 首饰推荐</h4>
+                    <table class="skill-table">
+                        <tr><th>部位</th><th>推荐</th><th>属性</th></tr>
+                        <tr><td>项链</td><td>佩鲁斯的荣誉</td><td>力量+110，暴击+3%</td></tr>
+                        <tr><td>戒指</td><td>黑珍珠/镇魂</td><td>固伤+10% / 独立+100</td></tr>
+                        <tr><td>手镯</td><td>贝里斯克/镇魂</td><td>力量+100 / 独立+80</td></tr>
+                        <tr><td>左槽</td><td>史诗灵魂/虫左槽</td><td>力量+200+ / 独立+150</td></tr>
+                        <tr><td>右槽</td><td>属性石/灵魂右槽</td><td>属强+20 / 独立+100</td></tr>
+                        <tr><td>勋章</td><td>守护勋章</td><td>力量+100，防御+10%</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== 柔道核心机制 ==================== -->
+        <div class="card">
+            <h2>⚙️ 柔道核心机制详解</h2>
+
+            <div class="mechanics-box">
+                <h3>🔒 抓取技能无视防御原理</h3>
+                <table class="skill-table">
+                    <tr><th>机制</th><th>说明</th></tr>
+                    <tr><td>抓取判定</td><td>抓取技能命中后，敌人进入"被控制"状态，此时防御力降为0</td></tr>
+                    <tr><td>无视类型</td><td>物理防御、魔法防御均无视（仅限抓取状态下）</td></tr>
+                    <tr><td>例外情况</td><td>部分Boss有"抓取免疫"或"抓取抗性"属性</td></tr>
+                    <tr><td>伤害计算</td><td>固伤技能：基础伤害 × (1 + 力量/250) × 暴击倍率</td></tr>
+                    <tr><td>伤害计算</td><td>百分比技能：基础倍率 × 武器攻击 × (1 + 力量/250) × 暴击倍率</td></tr>
+                </table>
+            </div>
+
+            <div class="mechanics-box">
+                <h3>📈 抓取状态下的伤害计算</h3>
+                <table class="skill-table">
+                    <tr><th>技能类型</th><th>计算公式</th><th>影响因素</th></tr>
+                    <tr><td>固伤技能<br>(抛投/背摔/折颈)</td><td>固伤基数 × (1 + 力量/250) × 暴击倍率 × 属强加成</td><td>力量、暴击、属强、独立攻击</td></tr>
+                    <tr><td>百分比技能<br>(螺旋/膝击)</td><td>倍率% × 武器攻击 × (1 + 力量/250) × 暴击倍率 × 属强加成</td><td>武器攻击、力量、暴击、属强</td></tr>
+                    <tr><td>混合技能<br>(死亡之握)</td><td>固伤部分 + 百分比部分</td><td>综合上述两种计算</td></tr>
+                </table>
+                <p class="note">💡 柔道为"固伤+百分比"混合职业，力量和独立攻击收益最高</p>
+            </div>
+
+            <div class="combo-section">
+                <h3>🔗 摔技连招伤害</h3>
+                <p style="margin: 15px 0; font-size: 1.1em;">
+                    <span class="highlight">基础连招</span>: 空斩打 <span class="combo-arrow">→</span> 背摔 <span class="combo-arrow">→</span> 折颈术 <span class="combo-arrow">→</span> 抛投 <span class="combo-arrow">→</span> 螺旋彗星落
+                </p>
+                <p style="margin: 10px 0; font-size: 1.1em;">
+                    <span class="highlight">进阶连招</span>: 空斩打 <span class="combo-arrow">→</span> 死亡之握 <span class="combo-arrow">→</span> 雷霆膝击 <span class="combo-arrow">→</span> 过肩摔 <span class="combo-arrow">→</span> 螺旋彗星落
+                </p>
+                <p style="margin: 10px 0; font-size: 1.1em;">
+                    <span class="highlight">爆发连招</span>: 抛投 <span class="combo-arrow">→</span> 螺旋彗星落 <span class="combo-arrow">→</span> 雷霆膝击 <span class="combo-arrow">→</span> 死亡之握 <span class="combo-arrow">→</span> 过肩摔
+                </p>
+                
+                <table class="skill-table" style="margin-top: 15px;">
+                    <tr><th>连招阶段</th><th>技能</th><th>伤害占比</th><th>说明</th></tr>
+                    <tr><td>起手</td><td>空斩打</td><td>5% ~ 8%</td><td>快速抓取，衔接后续</td></tr>
+                    <tr><td>控制</td><td>背摔/折颈</td><td>10% ~ 15%</td><td>控制敌人，制造输出窗口</td></tr>
+                    <tr><td>输出</td><td>抛投</td><td>15% ~ 20%</td><td>高固伤，核心输出</td></tr>
+                    <tr><td>爆发</td><td>螺旋彗星落</td><td>30% ~ 40%</td><td>最高伤害技能</td></tr>
+                    <tr><td>收尾</td><td>雷霆膝击/过肩摔</td><td>15% ~ 20%</td><td>补刀，清理残血</td></tr>
+                </table>
+            </div>
+
+            <div class="mechanics-box">
+                <h3>🎯 抓取技能特性总结</h3>
+                <ul style="margin: 10px 0 10px 20px; line-height: 1.8;">
+                    <li><strong>强制抓取</strong>：螺旋彗星落、死亡之握可在非抓取状态下强制抓取敌人</li>
+                    <li><strong>抓取取消</strong>：抓取技能命中后可立即取消衔接其他抓取技</li>
+                    <li><strong>抓取免疫</strong>：部分Boss和精英怪有抓取抗性，需切换非抓取技能</li>
+                    <li><strong>抓取判定</strong>：抓取技能命中后，敌人进入"抓取状态"，防御力降为0</li>
+                    <li><strong>抓取伤害</strong>：固伤技能在抓取状态下不受防御影响，伤害稳定</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ==================== 数据源说明 ==================== -->
+        <div class="card">
+            <h2>📚 数据源说明</h2>
+            <table class="skill-table">
+                <tr><th>数据源</th><th>说明</th><th>可信度</th></tr>
+                <tr><td>DNF吧 (百度贴吧)</td><td>玩家实测数据，版本讨论</td><td>★★★★☆</td></tr>
+                <tr><td>NGA DNF专区</td><td>专业玩家分析，数据计算</td><td>★★★★★</td></tr>
+                <tr><td>多玩DNF攻略</td><td>官方合作攻略，技能数据</td><td>★★★★☆</td></tr>
+                <tr><td>COLG玩家社区</td><td>老玩家经验，装备推荐</td><td>★★★★☆</td></tr>
+                <tr><td>17173 DNF专区</td><td>官方合作，版本资讯</td><td>★★★★☆</td></tr>
+            </table>
+            <p class="note">⚠️ 注：以上数据为70版本（红月/十七天夜区）的公开数据整理，实际数值可能因装备、Buff、技能加点等因素有所差异。建议以游戏内实际测试为准。</p>
+        </div>
+
+        <!-- ==================== 版本信息 ==================== -->
+        <div class="card">
+            <h2>📋 版本信息</h2>
+            <table class="skill-table">
+                <tr><th>项目</th><th>内容</th></tr>
+                <tr><td>版本号</td><td>70级（红月版本）</td></tr>
+                <tr><td>开放地区</td><td>十七天夜区（国服）</td></tr>
+                <tr><td>职业名称</td><td>柔道（暴风眼）</td></tr>
+                <tr><td>转职条件</td><td>格斗家 → 柔道家（Lv15）</td></tr>
+                <tr><td>觉醒技能</td><td>第一觉醒：狂风眼（Lv45）</td></tr>
+                <tr><td>二次觉醒</td><td>第二觉醒：暴风眼（Lv60）</td></tr>
+                <tr><td>EX技能</td><td>EX抛投、EX螺旋彗星落、EX雷霆膝击等</td></tr>
+                <tr><td>特性技能</td><td>抓取强化、摔技强化、连击强化等</td></tr>
+            </table>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; padding: 20px; color: #666;">
+            <p>🦞 DNF 70版本柔道伤害数据整理 | 数据来源：DNF吧、NGA、多玩DNF、COLG</p>
+            <p style="margin-top: 10px;">⚠️ 本数据仅供参考，实际游戏数值请以游戏内为准</p>
+        </footer>
+    </div>
+</body>
+</html>
