@@ -1,0 +1,3 @@
+[submodule "game-damage-research"]
+	path = game-damage-research
+	url = git@github.com:kankedelangzi/game.git

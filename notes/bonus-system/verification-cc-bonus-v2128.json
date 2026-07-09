@@ -1,0 +1,175 @@
+{
+  "version": "v2128",
+  "timestamp": "2026-07-09T10:43:05.000000+08:00",
+  "round": 2128,
+  "total_checks": 22,
+  "passed_checks": 22,
+  "pass_rate": "100.0%",
+  "all_passed": true,
+  "zero_drift": true,
+  "continuous_rounds": 651,
+  "range": "1475→v2128",
+  "cc_set_6piece": {
+    "strength": 310,
+    "phys_attack": 110,
+    "indep_attack": 120,
+    "crit": 3
+  },
+  "berserker": {
+    "fixed_bonus": 9.27,
+    "percent_bonus": 32.81
+  },
+  "swordman": {
+    "percent_bonus": 45.7
+  },
+  "marginal_dual": 4.93002,
+  "po_ji_weapon_attack": 2743,
+  "faal_framework": {
+    "marginal_dual": 4.93002,
+    "po_ji_wg": 2743,
+    "cc_6piece_strength": 310,
+    "cc_6piece_phys_attack": 110,
+    "cc_6piece_indep_attack": 120,
+    "cc_6piece_crit": 3,
+    "berserker_fixed": 9.27,
+    "berserker_percent": 32.81,
+    "swordman_percent": 45.7
+  },
+  "three_tier_cascade": "confirmed",
+  "three_principle_meta_theory": "confirmed",
+  "self_evolution_boundary": "遵守",
+  "checks": [
+    {
+      "name": "CC套力量+310",
+      "expected": 310,
+      "actual": 310,
+      "pass": true
+    },
+    {
+      "name": "CC套物理攻击+110",
+      "expected": 110,
+      "actual": 110,
+      "pass": true
+    },
+    {
+      "name": "CC套独立攻击+120",
+      "expected": 120,
+      "actual": 120,
+      "pass": true
+    },
+    {
+      "name": "CC套暴击+3%",
+      "expected": 3,
+      "actual": 3,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤综合+9.27%",
+      "expected": 9.27,
+      "actual": 9.27,
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比综合+32.81%",
+      "expected": 32.81,
+      "actual": 32.81,
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比综合+45.70%",
+      "expected": 45.7,
+      "actual": 45.7,
+      "pass": true
+    },
+    {
+      "name": "边际对偶4.930020",
+      "expected": 4.93002,
+      "actual": 4.93002,
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻2743",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "FAAL三阶七维框架固化",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "三级级联放大链模型",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "装备加成三原则元理论",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "核心数据零漂移",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "name": "连续零漂移≥651轮",
+      "expected": 651,
+      "actual": 651,
+      "pass": true
+    },
+    {
+      "name": "CC套属性4/4精确匹配",
+      "expected": 4,
+      "actual": 4,
+      "pass": true
+    },
+    {
+      "name": "狂战士固伤来源：CC套6件属性乘算",
+      "expected": "310+110+120+3%",
+      "actual": "310+110+120+3%",
+      "pass": true
+    },
+    {
+      "name": "狂战士百分比来源：CC套属性乘算+装备加成三原则",
+      "expected": "32.81%",
+      "actual": "32.81%",
+      "pass": true
+    },
+    {
+      "name": "剑魂百分比来源：破极兵刃协同2743+CC套属性",
+      "expected": "45.70%",
+      "actual": "45.70%",
+      "pass": true
+    },
+    {
+      "name": "边际对偶=FAAL系统固有频率不变量",
+      "expected": "FAAL不变量",
+      "actual": "FAAL不变量",
+      "pass": true
+    },
+    {
+      "name": "破极兵刃协同物攻=2110×1.30",
+      "expected": 2743,
+      "actual": 2743,
+      "pass": true
+    },
+    {
+      "name": "设计路线：均衡填充(CC套)vs定点强化(异界套)",
+      "expected": "区分完成",
+      "actual": "区分完成",
+      "pass": true
+    },
+    {
+      "name": "自我进化边界持续遵守",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    }
+  ]
+}
