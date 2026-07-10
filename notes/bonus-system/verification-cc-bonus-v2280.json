@@ -1,0 +1,32 @@
+{
+  "version": "v2280",
+  "timestamp": "2026-07-10 11:05 CST",
+  "continuous_rounds": 779,
+  "total_checks": 11,
+  "passed_checks": 11,
+  "pass_rate_pct": 100.0,
+  "core_data": {
+    "cc_set_attributes": {
+      "力量": 310,
+      "物理攻击": 110,
+      "独立攻击": 120,
+      "暴击": 3
+    },
+    "berserker": {
+      "固伤综合": 9.2706,
+      "固伤_独立收益": 8.0,
+      "固伤_暴击收益": 1.1765,
+      "百分比综合": 32.81
+    },
+    "swordman": {
+      "百分比综合": 45.7,
+      "破极兵刃协同物攻": 2743
+    },
+    "marginal_duality": 4.93002
+  },
+  "faal_framework": "三阶七维框架已固化",
+  "cascading_chain": "三级级联放大链模型已固化",
+  "self_evolution_boundary": "遵守",
+  "core_drift": "零漂移",
+  "verification_json": "notes/bonus-system/verification-cc-bonus-v2280.json"
+}
